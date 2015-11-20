@@ -1,28 +1,12 @@
-Web Sockets
+Halo
 ============================
-A simple nodeJS project that uses the socket.io NodeJS module to enable real time communication between clients and the development board via a web browser to toggle the state of the onboard LED.
+A simple nodeJS project that uses the socket.io NodeJS module to enable real time communication between clients and the development board via a web browser
 
 This NodeJS application consists of a client side application accessible via a web browser in which users can view the number of connected users, send text messages between users as well as toggle the onboard LED (ON/OFF) of your development board.
 
 You can view this application by inputting your development board's IP address as well as the port number (3000) specified in the main.js within the browser's address bar. For example, http://192.168.1.0:3000.
 
 **Note:** You can find your board's IP address by typing the ```ifconfig``` command in the Linux terminal via a Serial or SSH connection.
-
-###Intel(R) Edison
-In order to leverage this project successfully, you will need to connect to a wireless network. For more information, visit https://software.intel.com/en-us/connecting-to-a-network-intel-edison-board.
-
-###Intel(R) Galileo
-In order to leverage this project successfully, you will need to connect to a wireless network. For more information, visit https://software.intel.com/en-us/articles/intel-galileo-getting-started-ethernet.
-
-
-###Intel(R) Edison & Intel(R) Galileo
-####(Intel XDK IoT Edition) Install node modules
-Within the "manage your xdk daemon and IoT device" menu, check the following boxes:
-
-* Clean '/node_modules' before building Run npm install directly on IoT
-* Device (requires internet connection on device)
-
-You can installed the required node modules for this project which are found in the package.json file by pressing the Build/Install button.
 
 ####(Intel XDK IoT Edition) Upload & Run project
 After installing the neccessary node modules, press the:
@@ -112,11 +96,6 @@ http.listen(3000, function(){
 Input the IP address of your board plus the port number (3000) 
 For example, http://192.168.1.0:3000
 
-Intel(R) XDK IoT Edition
--------------------------------------------
-This template is part of the Intel(R) XDK IoT Edition. 
-Download the Intel(R) XDK IoT Edition at https://software.intel.com/en-us/html5/xdk-iot. To see the technical details of the sample, 
-please visit the sample article page at https://software.intel.com/en-us/xdk/docs/intel-xdk-iot-edition-nodejs-templates.
 
 Important App Files
 ---------------------------
