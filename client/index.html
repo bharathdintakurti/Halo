@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Project IoT</title>
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+	
+</head>
+
+    
+    
+    
+  </head>
+
+  <body>
+
+      <div class="container clearfix">
+    <div class="people-list" id="people-list">
+      
+      <ul class="list">
+        <li class="clearfix">
+            <a href="facebook/index.html">
+          <img src="images/1.jpg" alt="avatar" />
+            </a>
+            
+        </li>
+           <li class="clearfix">
+               <a href="gmail/index.html">
+          <img src="images/3.jpg" alt="avatar" />
+               </a>
+          
+        </li>
+        
+        <li class="clearfix">
+            <a href="twitter/index.html">
+          <img src="images/2.jpg" alt="avatar" />
+            </a>
+          
+        </li>
+        
+        <li class="clearfix">
+            <a href="sensex/index.html">
+                <img src="images/4.jpg" alt="avatar" /></a>
+          
+          
+        </li>
+        
+        <li class="clearfix">
+            <a href="weather/index.html">
+          <img src="images/5.jpg" alt="avatar" />
+            </a>
+          
+        </li>
+        
+        
+        
+      </ul>
+    </div>
+    
+    <div class="chat">
+      <div class="chat-header clearfix">
+        <img src="images/6.jpg" alt="avatar" />
+        
+        <div class="chat-about">
+          <div class="chat-with">Chat with Halo</div>
+          <div class="chat-num-messages"></div>
+        </div>
+        <i class="fa fa-star"></i>
+      </div> <!-- end chat-header -->
+      
+      <div class="chat-history">
+        <ul>
+          
+          
+        </ul>
+        
+      </div> <!-- end chat-history -->
+      
+      <div class="chat-message clearfix">
+        <textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="3"></textarea>
+                
+        
+        
+        <div id="led-link-container"><a><button>Send</button></a></div>
+
+      </div> <!-- end chat-message -->
+      
+    </div> <!-- end chat -->
+    
+  </div> <!-- end container -->
+
+<script id="message-template" type="text/x-handlebars-template">
+  <li class="clearfix">
+    <div class="message-data align-right">
+      <span class="message-data-time" >{{time}}, Today</span> &nbsp; &nbsp;
+      <span class="message-data-name" >Team H.B.R.S</span> <i class="fa fa-circle me"></i>
+    </div>
+    <div class="message other-message float-right">
+      {{messageOutput}}
+    </div>
+  </li>
+</script>
+
+<script id="message-response-template" type="text/x-handlebars-template">
+  <li>
+    <div class="message-data">
+      <span class="message-data-name"><i class="fa fa-circle online"></i> Halo</span>
+      <span class="message-data-time">{{time}}, Today</span>
+    </div>
+    <div class="message my-message">
+      {{response}}
+    </div>
+  </li>
+</script>
+       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+       <script src='http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script>
+       <script src='http://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js'></script>
+       <script src="client/js/index.js"></script>
+
+       <script src="client/index.js"></script>
+       <script src="/index.js"></script>
+      <script src="facebook/js/main.js"></script>
+	  <script src="gmail/js/main.js"></script>
+	  <script src="twitter/js/main.js"></script>
+	  <script src="sensex/js/main.js"></script>
+       <script src="socket.io/socket.io.js"></script>
+       <script src="index.js"></script>
+
+
+
+    
+  </body>
+</html>
